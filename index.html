@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marian... Madam Librarian</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel='stylesheet' href='./styles.css' />
+</head>
+<body>
+    <header>
+      <h1>Project:  Library</h1>
+    </header>
+    <section class="books-pane bg-indigo-200">
+      </section>
+    <section class='controls-pane flex flex-col align-center justify-between'>
+      <form id="add-book-form" class="flex flex-col items-center hidden bg-indigo-600 w-3/4 p-6">
+        <label class='font-bold flex w-full justify-between'><span class="text-white">Author:</span><input type="text" placeholder="Author(s)" class="author bg-indigo-100 w-4/5 rounded-md shadow-lg m-4 p-2"></label>
+        <label class='font-bold flex w-full justify-between'><span class="text-white">Title:</span><input type="text" placeholder="Title" class="title bg-indigo-100 w-4/5 rounded-md shadow-lg m-4 p-2"></label>
+        <label class='font-bold flex w-full justify-between'><span class="text-white">Num. Pages:</span><input type="number" placeholder="Number of pages" class="pages  bg-indigo-100 w-4/5 rounded-md shadow-lg m-4 p-2"></label>
+        <label class='font-bold flex w-full justify-between'><span class="text-white">Read:</span><input type="checkbox" class="read bg-indigo-100 w-4/5 rounded-md shadow-lg m-4"></label>
+        <button class="bg-indigo-300 w-24 text-indigo-800 font-semibold rounded-lg shadow-lg hover:bg-indigo-800 hover:text-white" type='submit' >Add Now</button>
+      </form>
+
+      <button class="add-new-book bg-indigo-500 hover:bg-indigo-800 text-indigo-100 font-black p-2 rounded-md shadow-lg focus:outline-none ">ADD A NEW BOOK</button>
+    </section>
+  <script src='./index.js' type='module'></script>
+</body>
+</html>
